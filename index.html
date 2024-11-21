@@ -4,50 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torre Digital - Detalhes</title>
-    <link rel="stylesheet" href="carrosel.css">
+    <title>Take a Tip - Turismo em Brasília</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-
-    <!-- Cabeçalho -->
+    <!-- Barra de Pesquisa -->
     <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquise um ponto turístico..." id="search" />
+            <button type="button">Pesquisar</button>
+        </div>
         <div class="logo">
-            <h1>Torre Digital</h1>
+            <h1>Take a Tip</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Carrossel de Imagens -->
-    <section id="carrossel" class="carousel">
-        <div class="carousel-container">
-            <div class="carousel-images">
-                <img src="images/torredigital.jpg" alt="Torre Digital 1">
-                <img src="images/torredigital1.jpg" alt="Torre Digital 2">
-                <img src="images/torredigital2.jpg" alt="Torre Digital 3">
-                <img src="images/torredigital4.jpg" alt="Torre Digital 4">
-                <img src="images/torredigital5.jpg" alt="Torre Digital 5">
-                <img src="images/torredigital6.jpg" alt="Torre Digital 6">
+    <!-- Seção principal -->
+    <main id="home">
+        <section class="intro">
+            <h2>Explore os principais pontos turísticos de Brasília</h2>
+            <p>Descubra a história e a beleza da capital do Brasil.</p>
+        </section>
+
+        <!-- Cards de pontos turísticos -->
+        <section class="cards">
+            <div class="card" id="card-catedral" onclick="openModal('modal-catedral')">
+                <img src="images/catedral.jpg" alt="Catedral de Brasília" class="card-image">
+                <h3>Catedral de Brasília</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                </div>
+                <div class="location">
+                    <p>Setor Central, Brasília</p>
+                </div>
             </div>
-            <!-- Controles de Navegação -->
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+            <div class="card" id="card-pontes" onclick="openModal('modal-ponte')">
+                <img src="images/ponte-jk.jpg" alt="Ponte JK" class="card-image">
+                <h3>Ponte JK</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <div class="location">
+                    <p>Setor Leste, Brasília</p>
+                </div>
+            </div>
+
+            <div class="card" id="card-panteao" onclick="openModal('modal-panteao')">
+                <img src="images/torre-digital.jpg" alt="Torre" class="card-image">
+                <h3>Torre Digital</h3>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                </div>
+                <div class="location">
+                    <p>Setor de Administração, Brasília</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modais com mais informações -->
+    <div class="modal" id="modal-catedral">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-catedral')">&times;</span>
+            <h2>Catedral de Brasília</h2>
+            <p>A Catedral Metropolitana de Brasília é um dos ícones da cidade, projetada por Oscar Niemeyer. Sua arquitetura única, em forma de uma coroa de espinhos, a torna um dos pontos turísticos mais visitados.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Resumo Detalhado -->
-    <section id="detalhes">
-        <h2>Sobre a Torre Digital</h2>
-        <p>A Torre Digital de Brasília é um dos marcos da modernidade na cidade. Com 145 metros de altura, ela foi construída para ser um ponto de transmissão e telecomunicações, além de oferecer uma vista panorâmica incomparável da capital federal.</p>
-        <p>A torre se destaca pela sua arquitetura imponente e é considerada um dos maiores símbolos do desenvolvimento tecnológico de Brasília. Os visitantes podem aproveitar a vista, apreciar a arquitetura moderna e ainda explorar os espaços ao redor da torre.</p>
-    </section>
+    <div class="modal" id="modal-ponte">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-ponte')">&times;</span>
+            <h2>Ponte JK</h2>
+            <p>A Ponte Juscelino Kubitschek é uma das pontes mais modernas de Brasília. Com suas linhas arrojadas e estruturas imponentes, é um dos cartões-postais mais belos da cidade.</p>
+        </div>
+    </div>
 
+    <div class="modal" id="modal-panteao">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-panteao')">&times;</span>
+            <h2>Torre Digital</h2>
+        <p>A Torre Digital de Brasília é um ponto turístico importante que simboliza o desenvolvimento da tecnologia no país. Localizada na capital federal, a torre tem uma altura de 145 metros e oferece uma vista panorâmica espetacular da cidade. O local é ideal para quem busca uma experiência única, admirando a paisagem enquanto aprende mais sobre a história e o futuro da comunicação no Brasil.</p>
+        <!-- Botão Saiba Mais -->
+        <a href="carrossel.html" class="saiba-mais-btn">Saiba Mais</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Turismo em Brasília. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Take a Tip - Turismo em Brasília. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -4,7 +4,37 @@ let index = 0;
 function moveSlide(direction) {
     const images = document.querySelector('.carousel-images');
     const totalImages = document.querySelectorAll('.carousel-images img').length;
-    index = (index + direction + totalImages) % totalImages;  // Garante que o índice fique dentro do intervalo de imagens
+    const visibleImages = 7; // Número de imagens visíveis no carrossel original
+
+    // Atualiza o índice
+    index += direction;
+
+    // Lógica de looping
+    if (index < 0) {
+        index = totalImages - visibleImages; // Move para o final duplicado
+        images.style.transition = "none"; // Remove transição para evitar animação
+        images.style.transform = `translateX(-${index * 100}%)`;
+        setTimeout(() => {
+            index = totalImages - visibleImages - 1;
+            images.style.transition = "transform 0.5s ease-in-out"; // Restaura a transição
+            images.style.transform = `translateX(-${index * 100}%)`;
+        }, 0);
+        return;
+    }
+
+    if (index >= totalImages - visibleImages) {
+        index = 0; // Move para o início duplicado
+        images.style.transition = "none"; // Remove transição para evitar animação
+        images.style.transform = `translateX(-${index * 100}%)`;
+        setTimeout(() => {
+            index = 1;
+            images.style.transition = "transform 0.5s ease-in-out"; // Restaura a transição
+            images.style.transform = `translateX(-${index * 100}%)`;
+        }, 0);
+        return;
+    }
+
+    // Move o carrossel normalmente
     images.style.transform = `translateX(-${index * 100}%)`;
 }
 
@@ -12,3 +42,13 @@ function moveSlide(direction) {
 setInterval(() => {
     moveSlide(1);
 }, 4000); // Troca de imagem a cada 4 segundos
+
+// Função para duplicar as imagens ao carregar
+window.onload = function () {
+    const imagesContainer = document.querySelector('.carousel-images');
+    const images = Array.from(imagesContainer.children);
+    // Duplicando as imagens
+    images.forEach(image => {
+        imagesContainer.appendChild(image.cloneNode(true)); 
+    });
+}

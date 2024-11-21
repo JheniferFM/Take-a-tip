@@ -1,9 +1,23 @@
+/* Estilização do botão "Voltar à Página Principal" */
+.botão-voltar-inicio {
+    background-color: coral;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botão-voltar-inicio:hover {
+    background-color: #ff7043;
+}
+
 /* Estilo do Carrossel */
 #carrossel {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 20px;
 }
 
 .carousel-container {
@@ -13,24 +27,30 @@
 
 .carousel-images {
     display: flex;
-    transition: transform 1s ease-in-out; /* Suaviza a transição ao mover */
+    transition: transform 0.5s ease-in-out; /* Transição suave */
 }
 
 .carousel-images img {
-    width: 70%; /* Diminui as imagens */
-    margin: 0 15px; /* Espaçamento entre as imagens */
-    border-radius: 15px; /* Bordas arredondadas */
-    object-fit: cover; 
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombras para dar um efeito de profundidade */
-    transform: scale(0.9) rotate(-5deg); /* Inclinação para um efeito criativo */
+    width: 50%; /* Diminui a largura das imagens (50% da largura do carrossel) */
+    object-fit: cover; /* Garante um ajuste adequado da imagem */
+    flex-shrink: 0; /* Impede que as imagens sejam reduzidas */
+    margin: 0 10px; /* Adiciona algum espaço entre as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombras para um efeito de profundidade */
     transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease; /* Efeitos de transição suaves */
 }
 
-/* Efeito de zoom e rotação ao passar o mouse */
+/* Efeito de zoom ao passar o mouse */
 .carousel-images img:hover {
-    transform: scale(1.1) rotate(5deg); /* Aumenta e gira um pouco a imagem */
+    transform: scale(1.05); /* Aumenta a imagem um pouco */
     box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
     opacity: 0.9; /* Dá um leve desfoque */
+}
+
+/* Efeito de aumento ao clicar na imagem */
+.carousel-images img.clicked {
+    transform: scale(1.5); /* Aumenta a imagem ao ser clicada */
+    z-index: 10; /* Coloca a imagem em cima das outras */
 }
 
 /* Controles do carrossel */
@@ -64,17 +84,35 @@ button:hover {
     right: 10px;
 }
 
-/* Estilo do rodapé */
+/* Resumo Detalhado */
+#detalhes {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#detalhes h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#detalhes p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Estilo do Footer */
 footer {
-    background-color: #0077b6;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .carousel-images img {
-        width: 85%; /* Ajusta as imagens em telas menores */
-    }
+footer p {
+    font-size: 1em;
 }

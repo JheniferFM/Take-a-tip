@@ -1,118 +1,171 @@
-/* Estilização do botão "Voltar à Página Principal" */
-.botão-voltar-inicio {
-    background-color: coral;
-    display: inline-block;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0077b6; /* Azul moderno */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
-.botão-voltar-inicio:hover {
-    background-color: #ff7043;
+header nav ul li a:hover {
+    color: #ffeb3b; /* Amarelo suave ao passar o mouse */
 }
 
-/* Estilo do Carrossel */
-#carrossel {
-    width: 100%;
+/* Estilo do carrossel */
+.carousel {
+    max-width: 800px; /* Largura máxima do carrossel */
+    margin: 20px auto; /* Centraliza o carrossel na página */
     overflow: hidden;
     position: relative;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradiente moderno */
 }
 
 .carousel-container {
-    width: 100%;
-    position: relative;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Transição suave */
+    width: 100%;
 }
 
 .carousel-images img {
-    width: 50%; /* Diminui a largura das imagens (50% da largura do carrossel) */
-    object-fit: cover; /* Garante um ajuste adequado da imagem */
-    flex-shrink: 0; /* Impede que as imagens sejam reduzidas */
-    margin: 0 10px; /* Adiciona algum espaço entre as imagens */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombras para um efeito de profundidade */
-    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease; /* Efeitos de transição suaves */
+    width: 100%; /* Imagens ocupam 100% da largura do contêiner */
+    height: 400px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que as imagens cubram o espaço sem distorcer */
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efeito de transição */
+    flex-shrink: 0; /* Impede que as imagens se comprimam */
 }
 
 /* Efeito de zoom ao passar o mouse */
 .carousel-images img:hover {
-    transform: scale(1.05); /* Aumenta a imagem um pouco */
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
-    opacity: 0.9; /* Dá um leve desfoque */
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    opacity: 0.9; /* Leve transparência */
+    z-index: 1; /* Garante que a imagem aumentada fique acima das outras */
 }
 
-/* Efeito de aumento ao clicar na imagem */
-.carousel-images img.clicked {
-    transform: scale(1.5); /* Aumenta a imagem ao ser clicada */
-    z-index: 10; /* Coloca a imagem em cima das outras */
-}
-
-/* Controles do carrossel */
-button {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 30px;
-    cursor: pointer;
+/* Botões de navegação */
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    color: #0077b6; /* Azul moderno */
+    border: none;
+    padding: 15px;
+    cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.1); /* Efeito de aumento no botão ao passar o mouse */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fundo branco sólido ao passar o mouse */
+    transform: translateY(-50%) scale(1.1); /* Efeito de escala */
 }
 
-/* Posição dos botões */
 .prev {
-    left: 10px;
+    left: 20px;
 }
 
 .next {
-    right: 10px;
+    right: 20px;
 }
 
-/* Resumo Detalhado */
+/* Indicadores de slide */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.carousel-indicators span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5); /* Bolinhas semi-transparentes */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicators span.active {
+    background-color: rgba(255, 255, 255, 1); /* Bolinha ativa */
+    transform: scale(1.2); /* Efeito de escala */
+}
+
+/* Seção de detalhes */
 #detalhes {
     padding: 20px;
-    background-color: #f4f4f4;
-    margin-top: 30px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #detalhes h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0077b6;
 }
 
 #detalhes p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-/* Estilo do Footer */
+/* Rodapé */
 footer {
-    background-color: #222;
+    background-color: #0077b6;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1em;
+    padding: 15px;
+    margin-top: 20px;
 }

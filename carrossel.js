@@ -11,7 +11,7 @@ function moveSlide(direction) {
 
     // Lógica de looping
     if (index < 0) {
-        index = totalImages - visibleImages; // Move para o final duplicado
+        index = totalImages - visibleImages; // Moave para o final duplicado
         images.style.transition = "none"; // Remove transição para evitar animação
         images.style.transform = `translateX(-${index * 100}%)`;
         setTimeout(() => {
@@ -52,3 +52,4 @@ window.onload = function () {
         imagesContainer.appendChild(image.cloneNode(true)); 
     });
 }
+ 

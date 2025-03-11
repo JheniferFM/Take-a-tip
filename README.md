@@ -1,8 +1,8 @@
-# 🌟 **Descubra Brasília - Plataforma de Turismo e Comércio Local** 🌟
+# 🌟 Take-a-tip - Plataforma de Turismo e Comércio Local** 🌟
 
 ## O que é o projeto?
 
-**"Descubra Brasília"** é uma plataforma inovadora desenvolvida para conectar turistas e empreendedores da capital do Brasil! Nosso objetivo é transformar a experiência de visitar Brasília, tornando mais fácil para os turistas descobrirem pontos turísticos imperdíveis e para os empreendedores locais divulgarem seus negócios. Se você é turista, encontrará tudo o que precisa para explorar a cidade, e se você é empreendedor, encontrará um espaço para mostrar seu comércio para um público diversificado!
+**"DTake-a-tip"** é uma plataforma inovadora desenvolvida para conectar turistas e empreendedores da capital do Brasil! Nosso objetivo é transformar a experiência de visitar Brasília, tornando mais fácil para os turistas descobrirem pontos turísticos imperdíveis e para os empreendedores locais divulgarem seus negócios. Se você é turista, encontrará tudo o que precisa para explorar a cidade, e se você é empreendedor, encontrará um espaço para mostrar seu comércio para um público diversificado!
 
 Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na fase de **prototipagem**. Estamos trabalhando com muito entusiasmo para criar uma plataforma intuitiva, moderna e cheia de recursos úteis para todos os envolvidos!
 
@@ -60,4 +60,4 @@ Quer testar o que estamos criando? É fácil! Basta seguir os passos abaixo:
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/projeto-turismo-brasilia.git
+   git clone https://github.com/JheniferFM/Take-a-tip.git

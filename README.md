@@ -2,7 +2,7 @@
 
 ## O que é o projeto?
 
-**"DTake-a-tip"** é uma plataforma inovadora desenvolvida para conectar turistas e empreendedores da capital do Brasil! Nosso objetivo é transformar a experiência de visitar Brasília, tornando mais fácil para os turistas descobrirem pontos turísticos imperdíveis e para os empreendedores locais divulgarem seus negócios. Se você é turista, encontrará tudo o que precisa para explorar a cidade, e se você é empreendedor, encontrará um espaço para mostrar seu comércio para um público diversificado!
+**"Take-a-tip"** é uma plataforma inovadora desenvolvida para conectar turistas e empreendedores da capital do Brasil! Nosso objetivo é transformar a experiência de visitar Brasília, tornando mais fácil para os turistas descobrirem pontos turísticos imperdíveis e para os empreendedores locais divulgarem seus negócios. Se você é turista, encontrará tudo o que precisa para explorar a cidade, e se você é empreendedor, encontrará um espaço para mostrar seu comércio para um público diversificado!
 
 Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na fase de **prototipagem**. Estamos trabalhando com muito entusiasmo para criar uma plataforma intuitiva, moderna e cheia de recursos úteis para todos os envolvidos!
 
@@ -14,7 +14,7 @@ Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na
 
 ## 👫 **Quem Somos?**
 
-Nós somos um time de quatro estudantes de tecnologia, turismo e inovação, trabalhando juntos para transformar a forma como turistas e empreendedores interagem em Brasília:
+Nós somos um time de quatro estudantes de tecnologia, trabalhando juntos para transformar a forma como turistas e empreendedores interagem em Brasília:
 
 - **Jhenifer** 
 - **Islayne** 

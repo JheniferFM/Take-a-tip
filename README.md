@@ -1,4 +1,4 @@
-# 🌟 Take-a-tip - Plataforma de Turismo e Comércio Local** 🌟
+# 🌟 Take-a-tip - Plataforma de Turismo e Comércio Local 🌟
 
 ## O que é o projeto?
 

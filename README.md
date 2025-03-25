@@ -12,7 +12,7 @@ Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na
   
 - **Para os empreendedores**: Oferecer uma vitrine digital para pequenos e médios negócios de Brasília, ajudando a promover suas lojas, restaurantes, hotéis e outros serviços para um público em expansão de turistas.
 
-## 👫 **Quem Somos?**
+## 👫 **Equipe de Desenvolvimento**
 
 Nós somos um time de quatro estudantes de tecnologia, trabalhando juntos para transformar a forma como turistas e empreendedores interagem em Brasília:
 
@@ -62,3 +62,6 @@ Quer testar o que estamos criando? É fácil! Basta seguir os passos abaixo:
 1. Clone o repositório para sua máquina local:
    ```bash
    git clone https://github.com/JheniferFM/Take-a-tip.git
+
+ ## **Referências e Fontes**
+[Inserir links ou textos utilizados como base para o desenvolvimento do projeto]

@@ -16,10 +16,10 @@ Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na
 
 Nós somos um time de quatro estudantes de tecnologia, trabalhando juntos para transformar a forma como turistas e empreendedores interagem em Brasília:
 
-- **Jhenifer** 
-- **Islayne** 
-- **Gabriel** 
-- **Marco** 
+- **Jhenifer Meneses (Desenvolvedora Front-end)** 
+- **Islayne Morais (A definir)** 
+- **Gabriel Malaquias (Desenvolvedor de Back-end)** 
+- **Marco Sabino (Administrador de Banco de Dados)** 
 
 ## 🚀 O Que Estamos Construindo?
 
@@ -63,5 +63,5 @@ Quer testar o que estamos criando? É fácil! Basta seguir os passos abaixo:
    ```bash
    git clone https://github.com/JheniferFM/Take-a-tip.git
 
- ## **Referências e Fontes**
+ ## 📖 **Referências e Fontes**
 [Inserir links ou textos utilizados como base para o desenvolvimento do projeto]

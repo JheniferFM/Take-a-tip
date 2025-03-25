@@ -16,10 +16,10 @@ Este projeto é um **projeto integrador da faculdade** e, atualmente, estamos na
 
 Nós somos um time de quatro estudantes de tecnologia, trabalhando juntos para transformar a forma como turistas e empreendedores interagem em Brasília:
 
-- **Jhenifer Meneses (Desenvolvedora Front-end)** 
-- **Islayne Morais (A definir)** 
-- **Gabriel Malaquias (Desenvolvedor de Back-end)** 
-- **Marco Sabino (Administrador de Banco de Dados)** 
+- **Jhenifer Meneses (Desenvolvedora Front-end);** 
+- **Islayne Morais (A definir);** 
+- **Gabriel Malaquias (Desenvolvedor de Back-end);** 
+- **Marco Sabino (Administrador de Banco de Dados);** 
 
 ## 🚀 O Que Estamos Construindo?
 
@@ -33,11 +33,11 @@ Atualmente, estamos na fase de **prototipagem** e cada dia é uma nova aventura!
 
 Nós acreditamos em soluções inovadoras, então estamos utilizando as melhores ferramentas para garantir uma plataforma funcional e dinâmica. Confira o que estamos utilizando até agora:
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: (a definir)
-- **Banco de Dados**: MySQL
-- **Ferramentas de versionamento**: Github
-- **Prototipagem**: Figma
+- **Frontend**: HTML, CSS, JavaScript;
+- **Backend**: (a definir);
+- **Banco de Dados**: MySQL;
+- **Ferramentas de versionamento**: Github;
+- **Prototipagem**: Figma.
 
 ## 🧩 Como Funciona?
 
@@ -60,6 +60,7 @@ Nosso projeto está em constante evolução, e qualquer ajuda é bem-vinda! Aqui
 Quer testar o que estamos criando? É fácil! Basta seguir os passos abaixo:
 
 1. Clone o repositório para sua máquina local:
+   
    ```bash
    git clone https://github.com/JheniferFM/Take-a-tip.git
 

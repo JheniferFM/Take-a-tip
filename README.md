@@ -36,7 +36,8 @@ Nós acreditamos em soluções inovadoras, então estamos utilizando as melhores
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: (a definir)
 - **Banco de Dados**: MySQL
-- **Prototipagem**: Figma 
+- **Ferramentas de versionamento**: Github
+- **Prototipagem**: Figma
 
 ## 🧩 Como Funciona?
 

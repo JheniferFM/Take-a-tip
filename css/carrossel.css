@@ -80,11 +80,11 @@ header nav ul li a:hover {
 }
 
 /* Efeito de zoom ao passar o mouse */
-/*.carousel-images img:hover {*/
-    /*transform: scale(1.1);  Aumenta a imagem em 10% */
-    /*opacity: 0.9;  Leve transparência */
-    /*z-index: 1;  Garante que a imagem aumentada fique acima das outras */
-/*}*/
+.carousel-images img:hover {
+    transform: scale(1.1);  /*Aumenta a imagem em 10% */
+    opacity: 0.9;  /*Leve transparência*/ 
+    z-index: 1;  /*Garante que a imagem aumentada fique acima das outras*/
+}
 
 /* Botões de navegação */
 .prev, .next {

@@ -4,7 +4,7 @@ let index = 0;
 function moveSlide(direction) {
     const images = document.querySelector('.carousel-images');
     const totalImages = document.querySelectorAll('.carousel-images img').length;
-    const visibleImages = 7; // Número de imagens visíveis no carrossel original
+    const visibleImages = 6; // Número de imagens visíveis no carrossel original
 
     // Atualiza o índice
     index += direction;
@@ -41,7 +41,7 @@ function moveSlide(direction) {
 // Adiciona navegação automática
 setInterval(() => {
     moveSlide(1);
-}, 5000); // Troca de imagem a cada 4 segundos
+}, 5000); // Troca de imagem a cada 5 segundos
 
 // Função para duplicar as imagens ao carregar
 window.onload = function () {

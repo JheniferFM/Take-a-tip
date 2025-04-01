@@ -18,7 +18,7 @@ body {
 header {
     background-color: #0077b6; /* Azul moderno */
     color: white;
-    padding: 20px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -72,7 +72,7 @@ header nav ul li a:hover {
 
 .carousel-images img {
     width: 100%; /* Imagens ocupam 100% da largura do contêiner */
-    height: 400px; /* Altura fixa para as imagens */
+    height: 500px; /* Altura fixa para as imagens */
     object-fit: cover; /* Garante que as imagens cubram o espaço sem distorcer */
     border-radius: 15px; /* Bordas arredondadas nas imagens */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Efeito de transição */
@@ -80,11 +80,11 @@ header nav ul li a:hover {
 }
 
 /* Efeito de zoom ao passar o mouse */
-.carousel-images img:hover {
-    transform: scale(1.1); /* Aumenta a imagem em 10% */
-    opacity: 0.9; /* Leve transparência */
-    z-index: 1; /* Garante que a imagem aumentada fique acima das outras */
-}
+/*.carousel-images img:hover {*/
+    /*transform: scale(1.1);  Aumenta a imagem em 10% */
+    /*opacity: 0.9;  Leve transparência */
+    /*z-index: 1;  Garante que a imagem aumentada fique acima das outras */
+/*}*/
 
 /* Botões de navegação */
 .prev, .next {
@@ -97,7 +97,7 @@ header nav ul li a:hover {
     padding: 15px;
     cursor: pointer;
     border-radius: 50%;
-    font-size: 1.5rem;
+   
     z-index: 10;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }

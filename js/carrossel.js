@@ -41,7 +41,7 @@ function moveSlide(direction) {
 // Adiciona navegação automática
 setInterval(() => {
     moveSlide(1);
-}, 4000); // Troca de imagem a cada 4 segundos
+}, 5000); // Troca de imagem a cada 4 segundos
 
 // Função para duplicar as imagens ao carregar
 window.onload = function () {
